@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rendezVousCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:background="@android:color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Ligne patient + badge -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Badge statut -->
+            <View
+                android:id="@+id/statusIndicator"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="@color/gray"/>
+
+            <!-- Nom patient -->
+            <TextView
+                android:id="@+id/rendezVousPatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom patient"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#212121"/>
+
+            <!-- Petit icône consultation -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💊"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- Date et statut -->
+        <TextView
+            android:id="@+id/rendezVousTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date - Heure | Statut"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Boutons Modifier / Supprimer -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/editBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✎ Modifier"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#4CAF50"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginEnd="12dp"
+                android:stateListAnimator="@null"
+                android:clipToOutline="true"/>
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🗑 Supprimer"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#E53935"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:stateListAnimator="@null"
+                android:clipToOutline="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

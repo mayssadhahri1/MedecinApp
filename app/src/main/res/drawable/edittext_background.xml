@@ -1,0 +1,21 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Couleur de fond claire -->
+    <solid android:color="#FFF0F5"/> <!-- rose très clair pastel -->
+
+    <!-- Bord arrondi -->
+    <corners android:radius="16dp"/>
+
+    <!-- Ombre / contour -->
+    <stroke
+        android:width="1dp"
+        android:color="#D81B60"/> <!-- rose doux pour le contour -->
+
+    <!-- Optionnel : padding interne (marge du texte) -->
+    <padding
+        android:left="12dp"
+        android:top="12dp"
+        android:right="12dp"
+        android:bottom="12dp"/>
+</shape>

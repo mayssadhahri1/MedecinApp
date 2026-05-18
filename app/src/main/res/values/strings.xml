@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="choisir_patient">Choisir Patient</string>
+    <string name="choisir_medecin">Choisir Médecin</string>
+    <string name="hint_date">Date</string>
+    <string name="hint_motif">Motif</string>
+    <string name="hint_observations">Observations</string>
+    <string name="hint_traitement">Traitement</string>
+    <string name="hint_suivi">Suivi</string>
+    <string name="hint_dernier_rdv">Dernier RDV</string>
+    <string name="button_scan">Choisir Fichier</string>
+    <string name="button_cancel">Annuler</string>
+    <string name="button_save">Enregistrer</string>
+
+
+</resources>

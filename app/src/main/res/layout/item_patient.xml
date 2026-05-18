@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/patientCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="16dp"
+    card_view:cardCornerRadius="18dp"
+    card_view:cardElevation="10dp"
+    android:backgroundTint="#FFF4F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:id="@+id/tvPatientNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom Patient"
+            android:textColor="#E91E63"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvPatientPrenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prénom"
+            android:textColor="#E91E63"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

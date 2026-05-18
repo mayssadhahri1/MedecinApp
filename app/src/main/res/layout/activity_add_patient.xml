@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdf0f7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_register"
+        android:elevation="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter Patient"
+            android:textColor="#FF4081"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/nomInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nom"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_rounded"/>
+
+        <EditText
+            android:id="@+id/prenomInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Prénom"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_rounded"/>
+
+        <EditText
+            android:id="@+id/dateNaissanceInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Date de naissance"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_rounded"
+            android:focusable="false"
+            android:clickable="true"/>
+
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_rounded"/>
+
+        <EditText
+            android:id="@+id/telephoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Téléphone"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_rounded"/>
+
+        <EditText
+            android:id="@+id/adresseInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Adresse"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_rounded"/>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Enregistrer"
+            android:textColor="#ffffff"
+            android:backgroundTint="#FF4081"
+            android:layout_marginTop="25dp"
+            android:padding="15dp"
+            android:elevation="4dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="22dp"
+    android:background="#FFF7FA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liste des Patients"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#D81B60"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Barre de recherche -->
+    <EditText
+        android:id="@+id/searchPatient"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Rechercher un patient"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#000000"
+        android:textColorHint="#B0B0B0"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/patientRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp"/>
+
+    <Button
+        android:id="@+id/addPatientBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un patient"
+        android:backgroundTint="#F48FB1"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="18dp"
+        android:padding="14dp"
+        android:textAllCaps="false"
+        android:letterSpacing="0.02"/>
+</LinearLayout>
